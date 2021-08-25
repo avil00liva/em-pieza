@@ -1,0 +1,112 @@
+:root{
+    --grey-color: rgba(107,114,128,1);
+    --greys-color: rgb(233, 233, 233);
+    --greybg-color: rgb(201, 197, 197);
+    --greys-color2: rgb(146, 145, 145);
+    --soft-red: #e5a3a3;
+    --str-red: #ED4337;
+    --dark-blue: #414965;
+    --dark-blue2: #3E5B79;
+    --main-color: #f5f5f5;
+    --lg-orange: #f9a826;
+    --dark-orange: #F29900;
+}
+.container {
+    margin-top: 80px;
+    padding: 2rem;
+}
+.container .containerToDo {
+    background-color: var(--dark-orange);
+    border-radius: 25px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.containerToDo .todoIcon {
+    margin: 1rem;
+    font-size: 5rem;
+}
+.containerToDo .todoH2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.inputContainer {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 90%;
+}
+.inputContainer input {
+    width: 90%;
+    border: 0px solid transparent;
+    outline: none;
+    font-size: 1rem;
+    padding: 1rem 2rem 1rem 2rem; 
+    border-radius: 8px 0 0 8px;
+    
+}
+.inputContainer .todoPlusIcon {
+    background-color: #fff;
+    padding: .6rem;
+    font-size: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+/*Mostrar tareas*/
+.showItems {
+    width: 90%;
+}
+.showItems .items {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    transition: 400ms ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.items:hover {
+    background-color: var(--lg-orange);
+}
+.items h3{
+    font-weight: 500;
+}
+.todoTrashIcon {
+    cursor: pointer;
+}
+.btnTodo {
+    outline: none;
+    border: 0px solid transparent;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+/*@media screen and (min-width: 480px){
+    .inputContainer input {
+       width: 270px;
+    }
+}
+    
+@media screen and (min-width: 1120px){
+    .inputContainer input {
+        width: 90%;
+    }
+}*/

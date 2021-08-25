@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {lazy, Suspense} from "react"
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Spin from "./components/SpinLazy/spin"
+const Home = lazy(()=> import("./pages"))
+const Tareas = lazy(()=> import("./components/Tareas"))
+const Navbar = lazy(()=> import("./components/navbar"))
+const Consejos = lazy(()=> import("./pages/Consejos"))
+const Footer = lazy(()=> import("./components/Footer"))
+const Noticias = lazy(()=> import("./pages/Noticias"))
+const Ejercicios = lazy(()=> import("./pages/Ejercicios"))
+const Sintomas = lazy(()=> import("./components/Sintomas/Sintomas"))
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Suspense fallback={<Spin />}>
+        <Navbar />
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/tareas" component={Tareas} />
+            <Route exact path="/consejos" component={Consejos} />
+            <Route exact path="/noticias" component={Noticias} />
+            <Route exact path="/ejercicios" component={Ejercicios} />
+            <Route exact path="/sintomas" component={Sintomas} />
+          </Switch>
+        <Footer />
+      </Suspense>
+    </Router>
   );
 }
 

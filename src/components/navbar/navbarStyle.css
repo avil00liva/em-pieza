@@ -1,0 +1,28 @@
+:root{
+    --dark-orange: #F29900;
+}
+
+.nav-menu{
+    background-color: var(--dark-orange);
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+}
+.nav-menu.active{
+    left: 0;
+    transition: 350ms;
+}
+span {
+    margin-left: 16px;
+}
+
+@media screen and (max-width: 500px){
+    .nav-menu{
+        width: 100%;
+    }
+}

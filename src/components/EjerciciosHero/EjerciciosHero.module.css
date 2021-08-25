@@ -1,0 +1,24 @@
+.headerHero {
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    height: 250px;
+    position: relative;
+
+}
+.imgHero {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 760px){
+    .headerHero {
+        margin-bottom: 7rem;
+    }
+    .imgHero {
+        object-fit: cover;
+        object-position: 20% 80%;
+        height: 350px;
+    }
+}

@@ -1,0 +1,29 @@
+:root {
+    --bg-dark: #262626;
+}
+
+.container {
+    margin-top: 5rem;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+}
+.title {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+.mainSect {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+ /*   background-color: #002f6a;*/
+    padding: 1rem;
+}
+.sectEnd {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100px;
+    padding: 1rem;
+    background-color: var(--bg-dark);
+}

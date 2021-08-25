@@ -1,0 +1,124 @@
+:root{
+    --bg-dark: #262626;
+    --grey-color: rgba(107,114,128,1);
+    --greys-color: rgb(233, 233, 233);
+    --greybg-color: rgb(201, 197, 197);
+    --greys-color2: rgb(146, 145, 145);
+    --dark-blue: #414965;
+    --dark-blue2: #3E5B79;
+    --main-color: #f5f5f5;
+    --dark-orange: #F29900;
+    --soft-orange: rgba(245,128,70,1);
+}
+
+.anuncioContainer{
+    padding: 1rem;
+    background-color: var(--bg-dark);
+}
+.anuncioContainer .h1Anuncio{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.h1Anuncio i {
+    color: var(--dark-orange);
+    font-size: 2rem;
+}
+.anuncioContainer .divTip {
+    overflow: hidden;
+}
+.divTip .acordTip {
+    margin: 0 auto;
+    background-color: var(--dark-orange);
+    border-radius: 0px 0px 50% 50%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    max-width: 750px;
+}
+.acordTip .h2Tip {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.acordTip .iconTip {
+    font-size: 2.5rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms ease-in;
+}
+.iconTip:hover {
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+/*Contenedor hidden*/
+.contentTip {
+    z-index: 1;
+    transition: all 350ms ease;
+    padding: 1rem;
+    background-color: var(--main-color);
+    border-left: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+    border-right: 1px solid #262626;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.contentTipactive {
+    max-width: 750px;
+    margin: 0 auto;
+    opacity: 0;
+    height: 0;
+    transition: all 350ms;
+}
+.contentTip h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+.contentTip p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
+    color: var(--greys-color2);
+}
+
+/*LISTA DE CONSEJOS*/
+
+.contentTip ul {
+    list-style: none;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+ul .liTip {
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    border-bottom: 3px solid var(--dark-orange);
+}
+.liTip span {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+/*.contentTip .spanLink {
+
+}*/
+.spanLink .address {
+    text-decoration: none;
+    color: var(--main-color);
+    background-color: #262626;
+    padding: 12px 24px;
+    transition: 200ms ease;
+}
+.address:hover {
+    background-color: #494949;
+}

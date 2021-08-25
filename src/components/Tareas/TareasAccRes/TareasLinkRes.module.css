@@ -1,0 +1,43 @@
+:root {
+    --bg-dark: #262626;
+    --main-color: #f4f4f4;
+    --dark-orange: #F29900;
+}
+
+.container {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    z-index: 5;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+}
+.taskIcon {
+    background-color: var(--dark-orange);
+    width: fit-content;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--bg-dark);
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.taskIcon .reactTaskIcon {
+    margin-left: 1rem;
+}
+.taskIcon .taskSpan {
+    margin: 0;
+    font-size: 1.1rem;
+    user-select: none;
+}
+@media screen and (min-width: 501px) {
+    .container {
+        display: none;
+    }
+}

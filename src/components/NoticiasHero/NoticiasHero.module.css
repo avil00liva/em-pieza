@@ -1,0 +1,16 @@
+.headerHero {
+    padding: 0;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 2rem;
+}
+.imgHero {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+@media screen and (min-width: 1250px){
+    .imgHero {
+        object-position: 70% 30%;
+    }
+}
