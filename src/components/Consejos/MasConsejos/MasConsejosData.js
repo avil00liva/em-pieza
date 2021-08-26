@@ -1,4 +1,4 @@
-export const MasConsejosData = [
+export const acord1 =
         {  
             id: 1,
             title: "Resonancia magnética",
@@ -12,7 +12,8 @@ export const MasConsejosData = [
             phar4: "Al estar en medio de una resonancia debemos permanecer quietos y es normal sentir frío, por eso es recomendable llevar una manta o pedir al enfermero/a que nos proporcione una.",
             spanD5: "Ropa Cómoda",
             phar5: "Recuerda que no tienes que llevar metales encima: hebillas, pulseras, etc. Usar ropa ancha y medias siempre son una buena elección.",
-        },
+        }
+export const acord2 =
         {
             id: 2,
             title: "Fatiga",
@@ -32,5 +33,4 @@ export const MasConsejosData = [
             phar7: "Otra vez, es algo que ya se ha dicho, pero es muy importante practicar ejercicios de relajación como el yoga, o ejercicios de respiración.",
             spanD8: "Pide ayuda",
             phar8: "Si se detectan síntomas depresivos, es importante contactar con profesionales.",
-        },
-]
+        }

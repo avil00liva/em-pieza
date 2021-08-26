@@ -1,0 +1,15 @@
+:root {
+    --dark-orange: #F29900;
+}
+
+.anuncioContainer{
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+.anuncioContainer .h1Anuncio{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.h1Anuncio i {
+    color: var(--dark-orange);
+}

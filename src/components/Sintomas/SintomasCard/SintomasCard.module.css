@@ -7,7 +7,7 @@
 .cardContainer {
     box-sizing: border-box;
     width: 100%;
-    max-width: 1060px;
+    max-width: 900px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -20,6 +20,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem;
     z-index: 3;
     cursor: pointer;
@@ -29,6 +30,7 @@
 }
 .cardH3 {
     text-align: center;
+    font-size: 1.6rem;
 }
 .iconMenu {
     color: #262626;
@@ -51,7 +53,6 @@
     background: transparent;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     transition: all 350ms;
     margin-top: 1rem;
@@ -72,9 +73,11 @@
     background: transparent;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     transition: all 350ms ease;
+}
+.cardContentActive .cardTitle {
+    opacity: 0;
 }
 .cardTitle {
     font-size: 1.6rem;

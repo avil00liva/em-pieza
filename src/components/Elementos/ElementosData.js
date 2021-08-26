@@ -6,8 +6,8 @@ import tareas from "../../assets/elementos/tareas.png"
 export const elements=[
     {
         elementImg: medical,
-        info: "Médicas",
-        path: "/noticias"
+        info: "Síntomas",
+        path: "/sintomas"
     },
     {
         elementImg: faqs,

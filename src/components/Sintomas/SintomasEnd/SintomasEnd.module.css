@@ -11,6 +11,7 @@
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .contentEnd {
     margin: 1rem 0;
@@ -18,7 +19,7 @@
     max-width: 500px;
 }
 .h3End {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 .pEnd {
@@ -26,28 +27,65 @@
     line-height: 1.5;
     margin-bottom: 1.2rem;
 }
+.circle {
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(242, 153, 0, 0.35) 0px 2px 8px 0px;
+    border-radius: 50%;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
 .imgEnd {
     margin-top: 1rem;
     width: 250px;
-    height: 210px;
-    animation:updown 3s linear infinite;
+    height: 250px;
 }
-@keyframes updown {
+.mHpp {
+    animation: fadeH 3s linear infinite;
+    animation-delay: 1s;
+    margin-right: 3rem;
+}
+.mSad {
+    animation: fadeS 3.5s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes fadeH {
     0% {
-        transform: translateY(0);
+        transform: translateX(-300px);
     }
     25% {
-        transform: translateY(30px);
+        transform: translateX(-150px);
     }
     50% {
-        transform: translateY(0);
-        opacity: .7;
+        transform: translateX(0);
     }
     75% {
-        transform: translateY(-30px);
+        transform: translateX(-150px);
     }
     100% {
-        transform: translateY(0);
-        opacity: .7;
+        transform: translateX(-300px);
+    }
+}
+@keyframes fadeS {
+    0% {
+        transform: translateX(300px);
+    }
+    25% {
+        transform: translateX(300px);
+    }
+    50% {
+        transform: translateX(150px);
+    }
+    75% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(300px);
     }
 }

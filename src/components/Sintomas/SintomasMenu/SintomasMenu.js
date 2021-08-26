@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./SintomasMenu.module.css"
 import SintomasCard from '../SintomasCard/SintomasCard'
-import {cards1,cards2,cards3} from "../SintomasCard/SintomasData"
+import {cards1,cards3} from "../SintomasCard/SintomasData"
 
 const SintomasMenu = () => {
 
