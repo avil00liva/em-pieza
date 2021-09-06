@@ -10,7 +10,8 @@ const Footer = lazy(()=> import("./components/Footer"))
 const Noticias = lazy(()=> import("./pages/Noticias"))
 const Ejercicios = lazy(()=> import("./pages/Ejercicios"))
 const Sintomas = lazy(()=> import("./components/Sintomas/Sintomas"))
-
+const Error404 = lazy(()=> import("./components/Error404"))
+const Referencias = lazy (()=> import("./pages/Referencias"))
 
 function App() {
 
@@ -25,6 +26,8 @@ function App() {
             <Route exact path="/noticias" component={Noticias} />
             <Route exact path="/ejercicios" component={Ejercicios} />
             <Route exact path="/sintomas" component={Sintomas} />
+            <Route exact path="/referencias" component={Referencias} />
+            <Route path="*" component={Error404} />
           </Switch>
         <Footer />
       </Suspense>

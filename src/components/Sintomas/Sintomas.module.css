@@ -4,6 +4,7 @@
 
 .container {
     margin-top: 5rem;
+    margin-bottom: 2rem;
     box-sizing: border-box;
     width: 100%;
     min-height: 100vh;

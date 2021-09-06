@@ -17,7 +17,7 @@ const Footer = () => {
                     </div>
                     <div className={styles.vinculos}>
                         <Link className={styles.address} to="/">Sobre nosotros</Link>
-                        <Link className={styles.address} to="/">Ubicación</Link>
+                        <Link className={styles.address} to="/referencias">Referencias</Link>
                         <Link className={styles.address} to="/">Términos de uso</Link>
                         <Link className={styles.address} to="/">Contacto</Link>
                     </div>

@@ -42,4 +42,10 @@ export const SidebarData=[
         icon: <FaIcons.FaTasks />,
         cName: "nav-text"
     },
+    {
+        title: "Referencias",
+        path: "/referencias",
+        icon: <FaIcons.FaLink />,
+        cName: "nav-text"
+    },
 ]

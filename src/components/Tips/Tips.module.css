@@ -14,6 +14,7 @@
 .anuncioContainer{
     padding: 1rem;
     background-color: var(--bg-dark);
+    margin-bottom: 2rem;
 }
 .anuncioContainer .h1Anuncio{
     text-align: center;
